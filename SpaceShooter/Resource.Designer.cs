@@ -3064,8 +3064,7 @@ namespace SpaceShooter {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to - LONGER ADVENTURE
-        ///- ROWDIER ENEMIES.
+        ///   Looks up a localized string similar to - ROWDIER ENEMIES.
         /// </summary>
         internal static string MenuCampaignHardcoreDescription {
             get {

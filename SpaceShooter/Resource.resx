@@ -2416,8 +2416,7 @@ SCORE!</value>
     <value>HARDCORE</value>
   </data>
   <data name="MenuCampaignHardcoreDescription" xml:space="preserve">
-    <value>- LONGER ADVENTURE
-- ROWDIER ENEMIES</value>
+    <value>- ROWDIER ENEMIES</value>
   </data>
   <data name="MenuCampaignHardcoreGoodLuck" xml:space="preserve">
     <value>GOOD LUCK, CAPTAIN!</value>
