@@ -538,7 +538,7 @@ DO YOU WANT TO SELECT A STORAGE DEVICE NOW?</value>
     <value>FLOTILLA</value>
   </data>
   <data name="MenuSubtitle" xml:space="preserve">
-    <value>ORBITAL BATTLESHIP MANEUVERS</value>
+    <value>NON TERMINAL ADVENTURES</value>
   </data>
   <data name="MenuTitlePressStart" xml:space="preserve">
     <value>PRESS START</value>
@@ -2457,5 +2457,11 @@ THIS CELESTIAL WEAPON</value>
   </data>
   <data name="MenuCreditsPortedBy" xml:space="preserve">
     <value>PORTING</value>
+  </data>
+  <data name="MenuCreditsModBy" xml:space="preserve">
+    <value>NTA MOD BY</value>
+  </data>
+  <data name="MenuCreditsRonan" xml:space="preserve">
+    <value>Ronan Burke</value>
   </data>
 </root>

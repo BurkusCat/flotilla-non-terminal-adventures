@@ -19,7 +19,7 @@ namespace SpaceShooter {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resource {
@@ -3416,11 +3416,29 @@ namespace SpaceShooter {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to NTA MOD BY.
+        /// </summary>
+        internal static string MenuCreditsModBy {
+            get {
+                return ResourceManager.GetString("MenuCreditsModBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PORTING.
         /// </summary>
         internal static string MenuCreditsPortedBy {
             get {
                 return ResourceManager.GetString("MenuCreditsPortedBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ronan Burke.
+        /// </summary>
+        internal static string MenuCreditsRonan {
+            get {
+                return ResourceManager.GetString("MenuCreditsRonan", resourceCulture);
             }
         }
         
@@ -4472,7 +4490,7 @@ namespace SpaceShooter {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ORBITAL BATTLESHIP MANEUVERS.
+        ///   Looks up a localized string similar to NON TERMINAL ADVENTURES.
         /// </summary>
         internal static string MenuSubtitle {
             get {
