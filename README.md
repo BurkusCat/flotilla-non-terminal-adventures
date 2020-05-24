@@ -1,5 +1,5 @@
-# Flotilla
-Source code of tactical space game Flotilla (2010)
+# Flotilla: Non Terminal Adventures
+Modded source code of tactical space game Flotilla (2010)
 
 ## About
 In 2010 I made the game [Flotilla](https://blendogames.com/flotilla), and now on its 10th birthday I'm releasing its [source code](https://github.com/blendogames/Flotilla). Beware: Flotilla is basically the project where I learned how to program. It's filled with strange and not-great code. More details [here.](http://blendogames.com/news/post/2020-02-27-flotilla_source_release)
