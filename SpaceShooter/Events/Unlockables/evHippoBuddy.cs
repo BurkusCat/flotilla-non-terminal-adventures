@@ -40,7 +40,7 @@ namespace SpaceShooter
         {
             Helpers.CloseThisMenu(sender);
 
-            eventManager.AddShip(new ShipData[]{shipTypes.Dreadnought, shipTypes.BeamGunship});
+            eventManager.AddShip(new ShipData[]{shipTypes.Dreadnought, shipTypes.BeamGunship}, true);
 
             eventManager.AddLog(img, eResource.logHippoBuddy);
         }

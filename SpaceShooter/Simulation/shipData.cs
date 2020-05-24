@@ -163,12 +163,6 @@ namespace SpaceShooter
             100
             );
 
-
-
-
-
-
-
         public static ShipData Drone = new ShipData(Resource.ShipTrainingDrone, ModelType.shipDestroyer,
             2.5f, 0.11f, collisions.Destroyer, 120,
             null,
@@ -183,8 +177,7 @@ namespace SpaceShooter
             0
             );
 
-
-
+        // Rear weapon
         public static ShipData BeamFrigate = new ShipData(Resource.ShipBeamFrigate, ModelType.shipBeamFrigate,
             3f,         /* Max Speed */
             0.15f,      /* Rotation Speed */
@@ -205,7 +198,52 @@ namespace SpaceShooter
             8,
             250
         );
+        public static ShipData BeamFrigateMk2 = new ShipData(Resource.ShipBeamFrigateMk2, ModelType.shipBeamFrigate,
+            3f,         /* Max Speed */
+            0.15f,      /* Rotation Speed */
+            collisions.BeamFrigate, /* Collision Data set */
+            300,       /* Max Health */
+            new TurretData[2]
+            {
+                new TurretTypes.BeamTurret(new Vector3(0, 0.56f, -6f),
+                    Vector3.Forward, Vector3.Forward),
+                new TurretTypes.BallTurretLowRange(new Vector3(0.0f, -0.2f, 5.4f),
+                    Vector3.Up, Vector3.Backward),
+            },
+            new float[3] { 0.05f, 0.9f, 1f },  /*front armor, bottom armor, rear armor */
+            ShipClass.Destroyer,   /* ship class */
+            4,
+            12, 3, 10,
+            sprite.ships.beamFrigate,
+            20f,
+            DamageTypes.BeamFrigate,
+            8,
+            250
+        );
+        public static ShipData BeamFrigateMk3 = new ShipData(Resource.ShipBeamFrigateMk3, ModelType.shipBeamFrigate,
+            3f,         /* Max Speed */
+            0.15f,      /* Rotation Speed */
+            collisions.BeamFrigate, /* Collision Data set */
+            300,       /* Max Health */
+            new TurretData[2]
+            {
+                new TurretTypes.BeamTurret(new Vector3(0, 0.56f, -6f),
+                    Vector3.Forward, Vector3.Forward),
+                new TurretTypes.BallTurret(new Vector3(0.0f, -0.2f, 5.4f),
+                    Vector3.Up, Vector3.Backward),
+            },
+            new float[3] { 0.05f, 0.9f, 1f },  /*front armor, bottom armor, rear armor */
+            ShipClass.Destroyer,   /* ship class */
+            4,
+            12, 3, 10,
+            sprite.ships.beamFrigate,
+            20f,
+            DamageTypes.BeamFrigate,
+            8,
+            250
+        );
 
+        // Range++
         public static ShipData BeamGunship = new ShipData(Resource.ShipBeamGunship, ModelType.shipBeamGunship,
             2.5f,         /* Max Speed */
             0.12f,      /* Rotation Speed */
@@ -228,7 +266,52 @@ namespace SpaceShooter
             8,
             350
         );
+        public static ShipData BeamGunshipMk2 = new ShipData(Resource.ShipBeamGunshipMk2, ModelType.shipBeamGunship,
+            2.5f,         /* Max Speed */
+            0.12f,      /* Rotation Speed */
+            collisions.BeamGunship, /* Collision Data set */
+            400,       /* Max Health */
+            new TurretData[]
+            {
+                new TurretTypes.BeamTurret(new Vector3(-1.8f, 0, -5),
+                    Vector3.Left, Vector3.Forward),
+                new TurretTypes.BeamTurretMk2(new Vector3(1.8f, 0, -5),
+                    Vector3.Right, Vector3.Forward),
+            },
+            new float[3] { 0.05f, 0.9f, 1.0f },  /*front armor, bottom armor, rear armor */
+            ShipClass.Destroyer,   /* ship class */
+            6,
+            16, 4, 7,
+            sprite.ships.beamGunship,
+            20,
+            DamageTypes.BeamGunship,
+            8,
+            350
+        );
+        public static ShipData BeamGunshipMk3 = new ShipData(Resource.ShipBeamGunshipMk3, ModelType.shipBeamGunship,
+            2.5f,         /* Max Speed */
+            0.12f,      /* Rotation Speed */
+            collisions.BeamGunship, /* Collision Data set */
+            400,       /* Max Health */
+            new TurretData[]
+            {
+                new TurretTypes.BeamTurret(new Vector3(-1.8f, 0, -5),
+                    Vector3.Left, Vector3.Forward),
+                new TurretTypes.BeamTurretMk3(new Vector3(1.8f, 0, -5),
+                    Vector3.Right, Vector3.Forward),
+            },
+            new float[3] { 0.05f, 0.9f, 1.0f },  /*front armor, bottom armor, rear armor */
+            ShipClass.Destroyer,   /* ship class */
+            6,
+            16, 4, 7,
+            sprite.ships.beamGunship,
+            20,
+            DamageTypes.BeamGunship,
+            8,
+            350
+        );
 
+        // Movement++
         public static ShipData Battleship = new ShipData(Resource.ShipBattleship, ModelType.shipCapitalShip,
             1.5f,         /* Max Speed */
             0.07f,      /* Rotation Speed */
@@ -256,7 +339,62 @@ namespace SpaceShooter
             0,
             400
             );
+        public static ShipData BattleshipMk2 = new ShipData(Resource.ShipBattleshipMk2, ModelType.shipCapitalShip,
+            1.8f,         /* Max Speed */
+            0.09f,      /* Rotation Speed */
+            collisions.Battleship, /* Collision Data set */
+            1000,       /* Max Health */
+            new TurretData[]
+            {
+                new TurretTypes.HeavyCannon(new Vector3(0, 2.2f, 3.7f),
+                    Vector3.Up, Vector3.Forward),
+                new TurretTypes.HeavyCannon(new Vector3(0, 2.2f, -5.2f),
+                    Vector3.Up, Vector3.Forward),
 
+                new TurretTypes.BallTurret(new Vector3(0, 1.1f, -19f),
+                    Vector3.Up, Vector3.Forward),
+                new TurretTypes.BallTurret(new Vector3(0, -1.2f, -19f),
+                    Vector3.Down, Vector3.Forward),
+            },
+            new float[3] { 0.01f, 0.9f, 1.0f },  /*front armor, bottom armor, rear armor */
+            ShipClass.CapitalShip,   /* ship class */
+            8,
+            42, 12, 4,
+            sprite.ships.capitalship,
+            16,
+            DamageTypes.Battleship,
+            0,
+            400
+            );
+        public static ShipData BattleshipMk3 = new ShipData(Resource.ShipBattleshipMk3, ModelType.shipCapitalShip,
+            1.95f,         /* Max Speed */
+            0.10f,      /* Rotation Speed */
+            collisions.Battleship, /* Collision Data set */
+            1000,       /* Max Health */
+            new TurretData[]
+            {
+                new TurretTypes.HeavyCannon(new Vector3(0, 2.2f, 3.7f),
+                    Vector3.Up, Vector3.Forward),
+                new TurretTypes.HeavyCannon(new Vector3(0, 2.2f, -5.2f),
+                    Vector3.Up, Vector3.Forward),
+
+                new TurretTypes.BallTurret(new Vector3(0, 1.1f, -19f),
+                    Vector3.Up, Vector3.Forward),
+                new TurretTypes.BallTurret(new Vector3(0, -1.2f, -19f),
+                    Vector3.Down, Vector3.Forward),
+            },
+            new float[3] { 0.01f, 0.9f, 1.0f },  /*front armor, bottom armor, rear armor */
+            ShipClass.CapitalShip,   /* ship class */
+            8,
+            42, 12, 4,
+            sprite.ships.capitalship,
+            16,
+            DamageTypes.Battleship,
+            0,
+            400
+            );
+
+        // Health++
         public static ShipData Destroyer = new ShipData(Resource.ShipDestroyer, ModelType.shipDestroyer,
             4f, 0.18f, collisions.Destroyer,
             200,
@@ -275,8 +413,44 @@ namespace SpaceShooter
             16,
             200
             );
+        public static ShipData DestroyerMk2 = new ShipData(Resource.ShipDestroyerMk2, ModelType.shipDestroyer,
+            4f, 0.18f, collisions.Destroyer,
+            300,
+            new TurretData[]
+            {
+                new TurretTypes.LongCannon(new Vector3(0.3f, -0.32f, -3.0f),
+                    Vector3.Forward, Vector3.Forward),
+            },
+            new float[3] { 0.05f, 0.7f, 0.95f },
+            ShipClass.Destroyer,
+            3,
+            6, 1, 3,
+            sprite.ships.destroyer,
+            0,
+            DamageTypes.Destroyer,
+            16,
+            200
+            );
+        public static ShipData DestroyerMk3 = new ShipData(Resource.ShipDestroyerMk3, ModelType.shipDestroyer,
+            4f, 0.18f, collisions.Destroyer,
+            350,
+            new TurretData[]
+            {
+                new TurretTypes.LongCannon(new Vector3(0.3f, -0.32f, -3.0f),
+                    Vector3.Forward, Vector3.Forward),
+            },
+            new float[3] { 0.05f, 0.7f, 0.95f },
+            ShipClass.Destroyer,
+            3,
+            6, 1, 3,
+            sprite.ships.destroyer,
+            0,
+            DamageTypes.Destroyer,
+            16,
+            200
+            );
 
-
+        // Fire rate++
         public static ShipData Gunship = new ShipData(Resource.ShipGunship, ModelType.shipGunship,
             3f, 0.12f, collisions.Gunship,
             500,
@@ -298,7 +472,50 @@ namespace SpaceShooter
             8,
             250
             );
+        public static ShipData GunshipMk2 = new ShipData(Resource.ShipGunshipMk2, ModelType.shipGunship,
+            3f, 0.12f, collisions.Gunship,
+            500,
+            new TurretData[]
+            {
+                new TurretTypes.TorpedoTurretMk2(new Vector3(-1.5f, -0.95f, -8.85f),
+                    Vector3.Forward, Vector3.Forward),
 
+                new TurretTypes.TorpedoTurretMk2(new Vector3(0, 3.7f, -0.15f),
+                    Vector3.Up, Vector3.Forward),
+            },
+            new float[3] { 0.01f, 0.7f, 0.95f },
+            ShipClass.Destroyer,
+            4,
+            18, 9, 7,
+            sprite.ships.gunship,
+            16,
+            DamageTypes.Gunship,
+            8,
+            250
+            );
+        public static ShipData GunshipMk3 = new ShipData(Resource.ShipGunshipMk3, ModelType.shipGunship,
+            3f, 0.12f, collisions.Gunship,
+            500,
+            new TurretData[]
+            {
+                new TurretTypes.TorpedoTurretMk3(new Vector3(-1.5f, -0.95f, -8.85f),
+                    Vector3.Forward, Vector3.Forward),
+
+                new TurretTypes.TorpedoTurretMk3(new Vector3(0, 3.7f, -0.15f),
+                    Vector3.Up, Vector3.Forward),
+            },
+            new float[3] { 0.01f, 0.7f, 0.95f },
+            ShipClass.Destroyer,
+            4,
+            18, 9, 7,
+            sprite.ships.gunship,
+            16,
+            DamageTypes.Gunship,
+            8,
+            250
+            );
+
+        // Reduced rear + bottom hit area
         public static ShipData Dreadnought = new ShipData(Resource.ShipDreadnought, ModelType.shipDreadnought,
             2f, 0.11f, collisions.Dreadnought,
             400,
@@ -320,10 +537,49 @@ namespace SpaceShooter
             8,
             300
             );
+        public static ShipData DreadnoughtMk2 = new ShipData(Resource.ShipDreadnoughtMk2, ModelType.shipDreadnought,
+            2f, 0.11f, collisions.Dreadnought,
+            400,
+            new TurretData[]
+            {
+                new TurretTypes.BeamTurret(new Vector3(-5.2f, -0.4f, -4.5f),
+                    Vector3.Forward, Vector3.Forward),
 
+                new TurretTypes.BeamTurret(new Vector3(5.2f, -0.4f, -4.5f),
+                    Vector3.Forward, Vector3.Forward),
+            },
+            new float[3] { 0.01f, 0.7f, 0.95f },
+            ShipClass.Destroyer,
+            5,
+            11, 14, 5,
+            sprite.ships.dreadnought,
+            1,
+            DamageTypes.Dreadnought,
+            8,
+            300
+            );
+        public static ShipData DreadnoughtMk3 = new ShipData(Resource.ShipDreadnoughtMk3, ModelType.shipDreadnought,
+            2f, 0.11f, collisions.Dreadnought,
+            400,
+            new TurretData[]
+            {
+                new TurretTypes.BeamTurret(new Vector3(-5.2f, -0.4f, -4.5f),
+                    Vector3.Forward, Vector3.Forward),
 
-
-
+                new TurretTypes.BeamTurret(new Vector3(5.2f, -0.4f, -4.5f),
+                    Vector3.Forward, Vector3.Forward),
+            },
+            new float[3] { 0.01f, 0.7f, 0.95f },
+            ShipClass.Destroyer,
+            5,
+            11, 14, 5,
+            sprite.ships.dreadnought,
+            1,
+            DamageTypes.Dreadnought,
+            8,
+            300
+            );
+ 
         public static ShipData Fighter = new ShipData(Resource.ShipFighter, ModelType.shipFighter,
             5f, 0.3f, collisions.Fighter, 50,
             new TurretData[]
@@ -449,6 +705,37 @@ namespace SpaceShooter
             }
         }
 
+        public class TorpedoTurretMk2 : TurretData
+        {
+            public TorpedoTurretMk2(Vector3 localOffset, Vector3 upAimVector, Vector3 defaultVector)
+            {
+                this.localOffset = localOffset;
+                this.upAimVector = upAimVector;
+                this.defaultVector = defaultVector;
+                this.modelName = ModelType.turretLong;
+                this.turretWeapon = (Weapon)new WeaponTorpedoMk2();
+                this.muzzleOffsets = new Vector3[1]
+                {
+                    new Vector3(0.0f, 0.0f, -2.5f),
+                };
+            }
+        }
+        public class TorpedoTurretMk3 : TurretData
+        {
+            public TorpedoTurretMk3(Vector3 localOffset, Vector3 upAimVector, Vector3 defaultVector)
+            {
+                this.localOffset = localOffset;
+                this.upAimVector = upAimVector;
+                this.defaultVector = defaultVector;
+                this.modelName = ModelType.turretLong;
+                this.turretWeapon = (Weapon)new WeaponTorpedoMk3();
+                this.muzzleOffsets = new Vector3[1]
+                {
+                    new Vector3(0.0f, 0.0f, -2.5f),
+                };
+            }
+        }
+
         public class LongCannon : TurretData
         {
             public LongCannon(Vector3 localOffset, Vector3 upAimVector, Vector3 defaultVector)
@@ -486,6 +773,22 @@ namespace SpaceShooter
             }
         }
 
+        public class BallTurretLowRange : TurretData
+        {
+            public BallTurretLowRange(Vector3 localOffset, Vector3 upAimVector, Vector3 defaultVector)
+            {
+                this.localOffset = localOffset;
+                this.upAimVector = upAimVector;
+                this.defaultVector = defaultVector;
+
+                this.modelName = ModelType.turretBall;
+                this.turretWeapon = (Weapon)new WeaponMachineGunLowRange();
+                this.muzzleOffsets = new Vector3[1]
+                {
+                    new Vector3(0.0f, 0.0f, -2f),
+                };
+            }
+        }
 
         public class InvisibleBeamTurret : TurretData
         {
@@ -519,6 +822,37 @@ namespace SpaceShooter
                 this.muzzleOffsets = new Vector3[1]
                 {
                     new Vector3(0, 0, -2.0f),
+                };
+            }
+        }
+
+        public class BeamTurretMk2 : TurretData
+        {
+            public BeamTurretMk2(Vector3 localOffset, Vector3 upAimVector, Vector3 defaultVector)
+            {
+                this.localOffset = localOffset;
+                this.upAimVector = upAimVector;
+                this.defaultVector = defaultVector;
+                this.modelName = ModelType.turretBall;
+                this.turretWeapon = (Weapon)new BeamGunMk2();
+                this.muzzleOffsets = new Vector3[1]
+                {
+                    new Vector3(0.0f, 0.0f, -2f),
+                };
+            }
+        }
+        public class BeamTurretMk3 : TurretData
+        {
+            public BeamTurretMk3(Vector3 localOffset, Vector3 upAimVector, Vector3 defaultVector)
+            {
+                this.localOffset = localOffset;
+                this.upAimVector = upAimVector;
+                this.defaultVector = defaultVector;
+                this.modelName = ModelType.turretBall;
+                this.turretWeapon = (Weapon)new BeamGunMk3();
+                this.muzzleOffsets = new Vector3[1]
+                {
+                    new Vector3(0.0f, 0.0f, -2f),
                 };
             }
         }

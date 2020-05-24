@@ -38,7 +38,7 @@ namespace SpaceShooter
         {
             Helpers.CloseThisMenu(sender);
 
-            eventManager.AddShip(shipTypes.Battleship);
+            eventManager.AddShip(shipTypes.Battleship, true);
 
             eventManager.AddLog(img, eResource.logPigRewardShip);
         }

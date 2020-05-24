@@ -2463,4 +2463,40 @@ THIS CELESTIAL WEAPON</value>
   <data name="MenuCreditsRonan" xml:space="preserve">
     <value>Ronan Burke</value>
   </data>
+  <data name="ShipBattleshipMk2" xml:space="preserve">
+    <value>BATTLESHIP MARK II</value>
+  </data>
+  <data name="ShipBattleshipMk3" xml:space="preserve">
+    <value>BATTLESHIP MARK III</value>
+  </data>
+  <data name="ShipBeamFrigateMk2" xml:space="preserve">
+    <value>BEAM FRIGATE MARK II</value>
+  </data>
+  <data name="ShipBeamFrigateMk3" xml:space="preserve">
+    <value>BEAM FRIGATE MARK III</value>
+  </data>
+  <data name="ShipBeamGunshipMk2" xml:space="preserve">
+    <value>BEAM GUNSHIP MARK II</value>
+  </data>
+  <data name="ShipBeamGunshipMk3" xml:space="preserve">
+    <value>BEAM GUNSHIP MARK III</value>
+  </data>
+  <data name="ShipDestroyerMk2" xml:space="preserve">
+    <value>DESTROYER MARK II</value>
+  </data>
+  <data name="ShipDestroyerMk3" xml:space="preserve">
+    <value>DESTROYER MARK III</value>
+  </data>
+  <data name="ShipDreadnoughtMk2" xml:space="preserve">
+    <value>DREADNOUGHT MARK II</value>
+  </data>
+  <data name="ShipDreadnoughtMk3" xml:space="preserve">
+    <value>DREADNOUGHT MARK III</value>
+  </data>
+  <data name="ShipGunshipMk2" xml:space="preserve">
+    <value>TORPEDO GUNSHIP MARK II</value>
+  </data>
+  <data name="ShipGunshipMk3" xml:space="preserve">
+    <value>TORPEDO GUNSHIP MARK III</value>
+  </data>
 </root>

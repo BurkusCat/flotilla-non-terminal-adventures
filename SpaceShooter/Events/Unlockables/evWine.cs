@@ -27,7 +27,6 @@ namespace SpaceShooter
 
             EventPopup popup = base.CreatePopup(this.manager,
                 img, popupTxt);
-
             
             popup.AddItem(eResource.evKaraoke0Great, OnPrize);
 
@@ -38,13 +37,9 @@ namespace SpaceShooter
         {
             Helpers.CloseThisMenu(sender);
 
-            eventManager.AddShip(shipTypes.BeamGunship);
+            eventManager.AddShip(shipTypes.BeamGunship, true);
 
             eventManager.AddLog(img, eResource.logWine);
-
-            
-
         }
-
     }
 }

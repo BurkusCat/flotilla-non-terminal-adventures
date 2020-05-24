@@ -20,7 +20,12 @@ namespace SpaceShooter
         {
             musicCue = sounds.Music.invaders;
 
-            shipList = new ShipData[] { shipTypes.BeamFrigate, shipTypes.Destroyer, shipTypes.Dreadnought, shipTypes.Gunship };
+            shipList = new ShipData[] {
+                shipTypes.BeamFrigate,
+                shipTypes.Destroyer,
+                shipTypes.Dreadnought,
+                shipTypes.Gunship,
+            };
             shipMinMax = Helpers.GetAdjustedEnemyFleetSize();
             faction = Faction.Chickens;
         }

@@ -389,9 +389,14 @@ namespace SpaceShooter
         /// <summary>
         /// add a new ship to this player's flotilla.
         /// </summary>
-        public void AddShip(ShipData shipType)
+        public void AddShip(ShipData shipType, bool chanceToUpgrade)
         {
             FrameworkCore.PlayCue(sounds.Fanfare.ship);
+
+            if (chanceToUpgrade)
+            {
+                shipType = UpgradeShip(shipType);
+            }
 
             FleetShip ship = Helpers.AddFleetShip(FrameworkCore.players[0].campaignShips, shipType);
 
@@ -405,12 +410,19 @@ namespace SpaceShooter
         }
 
 
-
-        public void AddShip(ShipData[] shipType)
+        /// <summary>
+        /// add a random ship to this player's flotilla.
+        /// </summary>
+        public void AddShip(ShipData[] shipType, bool chanceToUpgrade)
         {
             FrameworkCore.PlayCue(sounds.Fanfare.ship);
 
             ShipData shipToAdd = shipType[FrameworkCore.r.Next(shipType.Length)];
+
+            if (chanceToUpgrade)
+            {
+                shipToAdd = UpgradeShip(shipToAdd);
+            }
 
             FleetShip ship = Helpers.AddFleetShip(FrameworkCore.players[0].campaignShips, shipToAdd);
 
@@ -421,6 +433,67 @@ namespace SpaceShooter
             ShipPopup popup = new ShipPopup(menuManager);
             popup.fleetShip = ship;
             menuManager.AddMenu(popup);
+        }
+
+        /// <summary>
+        /// Randomly upgrade a ship if it is possible
+        /// </summary>
+        /// <param name="shipType"></param>
+        /// <returns></returns>
+        public ShipData UpgradeShip(ShipData shipType)
+        {
+            var options = new List<ShipData> { shipType };
+
+            if (shipType.modelname == ModelType.shipBeamFrigate)
+            {
+                options.Add(shipTypes.BeamFrigateMk2);
+                options.Add(shipTypes.BeamFrigateMk3);
+            }
+            else if (shipType.modelname == ModelType.shipBeamGunship)
+            {
+                options.Add(shipTypes.BeamGunshipMk2);
+                options.Add(shipTypes.BeamGunshipMk3);
+            }
+            else if (shipType.modelname == ModelType.shipCapitalShip)
+            {
+                options.Add(shipTypes.BattleshipMk2);
+                options.Add(shipTypes.BattleshipMk3);
+            }
+            else if (shipType.modelname == ModelType.shipDestroyer)
+            {
+                options.Add(shipTypes.DestroyerMk2);
+                options.Add(shipTypes.DestroyerMk3);
+            }
+            else if (shipType.modelname == ModelType.shipDreadnought)
+            {
+                options.Add(shipTypes.DreadnoughtMk2);
+                options.Add(shipTypes.DreadnoughtMk3);
+            }
+            else if (shipType.modelname == ModelType.shipGunship)
+            {
+                options.Add(shipTypes.GunshipMk2);
+                options.Add(shipTypes.GunshipMk3);
+            }
+
+            if (options.Count == 1) // no upgrades available
+            {
+                return options[0];
+            }
+
+            var randomInteger = FrameworkCore.r.Next(100);
+
+            if (randomInteger == 0) // 1% chance
+            {
+                return options[2];
+            }
+            else if (randomInteger > 0 && randomInteger <= 10) // 10% chance
+            {
+                return options[3];
+            } 
+            else // 89% chance
+            {
+                return options[0];
+            }
         }
 
 

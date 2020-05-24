@@ -24,7 +24,7 @@ namespace SpaceShooter
         private void OnEnd(object sender, InputArgs e)
         {
             Helpers.CloseThisMenu(sender);
-            eventManager.AddShip(shipTypes.BeamFrigate);
+            eventManager.AddShip(shipTypes.BeamFrigate, true);
         }
     }
 }

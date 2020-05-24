@@ -43,7 +43,7 @@ namespace SpaceShooter
 
             Helpers.CloseThisMenu(sender);
 
-            eventManager.AddShip(new ShipData[] { shipTypes.BeamGunship, shipTypes.Dreadnought });
+            eventManager.AddShip(new ShipData[] { shipTypes.BeamGunship, shipTypes.Dreadnought }, true);
 
             eventManager.AddLog(img, eResource.logPandaSlaveBuddy);
         }

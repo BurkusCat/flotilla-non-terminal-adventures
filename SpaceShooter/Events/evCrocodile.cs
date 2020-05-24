@@ -52,7 +52,7 @@ namespace SpaceShooter
         private void OnJoin(object sender, InputArgs e)
         {
             Helpers.CloseThisMenu(sender);
-            eventManager.AddShip(shipTypes.BeamGunship);
+            eventManager.AddShip(shipTypes.BeamGunship, true);
 
             eventManager.AddLog(img, eResource.logCrocodileFriend);
         }

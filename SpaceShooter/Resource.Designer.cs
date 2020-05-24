@@ -6482,11 +6482,47 @@ namespace SpaceShooter {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BATTLESHIP MARK II.
+        /// </summary>
+        internal static string ShipBattleshipMk2 {
+            get {
+                return ResourceManager.GetString("ShipBattleshipMk2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BATTLESHIP MARK III.
+        /// </summary>
+        internal static string ShipBattleshipMk3 {
+            get {
+                return ResourceManager.GetString("ShipBattleshipMk3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BEAM FRIGATE.
         /// </summary>
         internal static string ShipBeamFrigate {
             get {
                 return ResourceManager.GetString("ShipBeamFrigate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BEAM FRIGATE MARK II.
+        /// </summary>
+        internal static string ShipBeamFrigateMk2 {
+            get {
+                return ResourceManager.GetString("ShipBeamFrigateMk2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BEAM FRIGATE MARK III.
+        /// </summary>
+        internal static string ShipBeamFrigateMk3 {
+            get {
+                return ResourceManager.GetString("ShipBeamFrigateMk3", resourceCulture);
             }
         }
         
@@ -6500,6 +6536,24 @@ namespace SpaceShooter {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BEAM GUNSHIP MARK II.
+        /// </summary>
+        internal static string ShipBeamGunshipMk2 {
+            get {
+                return ResourceManager.GetString("ShipBeamGunshipMk2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BEAM GUNSHIP MARK III.
+        /// </summary>
+        internal static string ShipBeamGunshipMk3 {
+            get {
+                return ResourceManager.GetString("ShipBeamGunshipMk3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DESTROYER.
         /// </summary>
         internal static string ShipDestroyer {
@@ -6509,11 +6563,47 @@ namespace SpaceShooter {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DESTROYER MARK II.
+        /// </summary>
+        internal static string ShipDestroyerMk2 {
+            get {
+                return ResourceManager.GetString("ShipDestroyerMk2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DESTROYER MARK III.
+        /// </summary>
+        internal static string ShipDestroyerMk3 {
+            get {
+                return ResourceManager.GetString("ShipDestroyerMk3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DREADNOUGHT.
         /// </summary>
         internal static string ShipDreadnought {
             get {
                 return ResourceManager.GetString("ShipDreadnought", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DREADNOUGHT MARK II.
+        /// </summary>
+        internal static string ShipDreadnoughtMk2 {
+            get {
+                return ResourceManager.GetString("ShipDreadnoughtMk2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DREADNOUGHT MARK III.
+        /// </summary>
+        internal static string ShipDreadnoughtMk3 {
+            get {
+                return ResourceManager.GetString("ShipDreadnoughtMk3", resourceCulture);
             }
         }
         
@@ -6532,6 +6622,24 @@ namespace SpaceShooter {
         internal static string ShipGunship {
             get {
                 return ResourceManager.GetString("ShipGunship", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TORPEDO GUNSHIP MARK II.
+        /// </summary>
+        internal static string ShipGunshipMk2 {
+            get {
+                return ResourceManager.GetString("ShipGunshipMk2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TORPEDO GUNSHIP MARK III.
+        /// </summary>
+        internal static string ShipGunshipMk3 {
+            get {
+                return ResourceManager.GetString("ShipGunshipMk3", resourceCulture);
             }
         }
         

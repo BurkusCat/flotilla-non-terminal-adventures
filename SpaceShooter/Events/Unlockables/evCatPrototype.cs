@@ -41,7 +41,7 @@ namespace SpaceShooter
         {
             Helpers.CloseThisMenu(sender);
 
-            eventManager.AddShip(shipTypes.Fighter);
+            eventManager.AddShip(shipTypes.Fighter, false);
 
             Helpers.AddPointBonus();
         }

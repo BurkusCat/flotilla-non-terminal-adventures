@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -198,6 +198,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
+    <Compile Include="Simulation\BeamGunMk3.cs" />
+    <Compile Include="Simulation\BeamGunMk2.cs" />
     <Compile Include="Simulation\Bolt.cs" />
     <Compile Include="Camera\Camera.cs" />
     <Compile Include="Camera\ChaseCamera.cs" />
@@ -218,6 +220,9 @@
     <Compile Include="Simulation\Collideable.cs" />
     <Compile Include="Simulation\BeamGun.cs" />
     <Compile Include="Simulation\Factions.cs" />
+    <Compile Include="Simulation\WeaponMachinegunLowRange.cs" />
+    <Compile Include="Simulation\WeaponTorpedoMk3.cs" />
+    <Compile Include="Simulation\WeaponTorpedoMk2.cs" />
     <Compile Include="Simulation\WeaponTorpedo.cs" />
     <Compile Include="Simulation\Hulk.cs" />
     <Compile Include="Simulation\GameEffect.cs" />

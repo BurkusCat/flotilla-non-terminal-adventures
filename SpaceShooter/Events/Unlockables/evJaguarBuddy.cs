@@ -40,7 +40,7 @@ namespace SpaceShooter
         {
             Helpers.CloseThisMenu(sender);
 
-            eventManager.AddShip(new ShipData[] { shipTypes.Destroyer, shipTypes.Gunship });
+            eventManager.AddShip(new ShipData[] { shipTypes.Destroyer, shipTypes.Gunship }, true);
 
             eventManager.AddLog(img, eResource.logJaguarBuddy);
         }

@@ -30,7 +30,7 @@ namespace SpaceShooter
         {
             Helpers.CloseThisMenu(sender);
 
-            eventManager.AddShip(new ShipData[]{shipTypes.BeamGunship, shipTypes.Battleship});
+            eventManager.AddShip(new ShipData[]{shipTypes.BeamGunship, shipTypes.Battleship}, true);
 
             eventManager.AddLog(img, eResource.logHitchhikerGift);
         }
