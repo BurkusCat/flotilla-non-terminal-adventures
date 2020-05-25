@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Flotilla")]
+[assembly: AssemblyTitle("Flotilla - Non Terminal Adventures")]
 [assembly: AssemblyProduct("Flotilla")]
-[assembly: AssemblyDescription("Orbital battleship maneuvers.")]
+[assembly: AssemblyDescription("Non terminal adventures.")]
 [assembly: AssemblyCompany("Blendo Games")]
 [assembly: AssemblyCopyright("Copyright © Blendo Games 2010")]
 [assembly: AssemblyTrademark("")]

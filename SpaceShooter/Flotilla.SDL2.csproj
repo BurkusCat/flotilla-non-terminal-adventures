@@ -58,6 +58,9 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Background\Atmosphere.cs" />
     <Compile Include="BloomEffect\Bloom.cs" />
