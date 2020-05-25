@@ -309,17 +309,7 @@ namespace SpaceShooter
 
         private bool TerminalCheck()
         {
-            if (!FrameworkCore.isHardcoreMode && FrameworkCore.players[0].planetsVisited >= FrameworkCore.r.Next(Helpers.MAXEVENTS, Helpers.MAXEVENTS + 2))
-            {
-                return true;
-            }
-            else if (FrameworkCore.isHardcoreMode &&
-                (eventPool.Count <= 0 || IsLastPlanet() || FrameworkCore.players[0].planetsVisited > FrameworkCore.worldMap.Locations.Count - 5 ))
-            {
-                return true;
-            }
-
-            return false;
+            return eventPool.Count <= 0 || IsLastPlanet() || FrameworkCore.players[0].planetsVisited >= FrameworkCore.worldMap.Locations.Count;
         }
 
         public bool StartEvent(WorldType worldType)

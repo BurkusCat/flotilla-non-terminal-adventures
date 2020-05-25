@@ -8,8 +8,7 @@
 #region Using
 using System;
 using System.Collections.Generic;
-
-
+using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -726,6 +725,15 @@ namespace SpaceShooter
             if (worldState != WorldState.Combat)
                 worldState = WorldState.Combat;
 
+
+            if (eventData.shipList != null)
+            {
+                // small chance to upgrade enemy ships
+                eventData.shipList = eventData.shipList
+                    .Select((ship) => eventManager.UpgradeShip(ship))
+                    .ToArray();
+            }
+
             this.currentEvent = eventData;
         }
 
@@ -860,7 +868,7 @@ namespace SpaceShooter
         }
 
 #if DEBUG
-        Event[] eventList = new Event[]
+        /*Event[] eventList = new Event[]
             {
                 new evAbandoned(),
                 new evAbandonZombies(),
@@ -938,7 +946,7 @@ namespace SpaceShooter
                 new evYetiResentment(),
                 new evYetiRevenge(),
                 new evYetiStarve(),
-            };
+            };*/
 
         int evIndex = 0;
 #endif

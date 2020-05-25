@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="evAurora0" xml:space="preserve">
     <value>YOU DISCOVER THE {0}{1} BOREALIS, A UNIQUE CELESTIAL PHENOMENA.
@@ -880,7 +880,7 @@ THE PENALTY IS TOTAL ANNIHILATION."</value>
     <value>CERDIVIAN FORCES NOTICED I COMMANDEERED A DERELICT SHIP. THEY ATTACKED ME.</value>
   </data>
   <data name="evTutorial0" xml:space="preserve">
-    <value>ARMED WITH NOTHING BUT A BONE TO PICK AND SEVEN MONTHS LEFT TO LIVE, YOU EMBARK ON YOUR LAST ADVENTURE.</value>
+    <value>ARMED WITH NOTHING BUT A BONE TO PICK, YOU EMBARK ON YOUR LAST ADVENTURE.</value>
   </data>
   <data name="evTutorial0OK" xml:space="preserve">
     <value>ONWARD GO!</value>
@@ -897,30 +897,30 @@ DO YOU WANT TO RUN A COMBAT TRAINING EXERCISE?"</value>
     <value>SKIP TUTORIAL</value>
   </data>
   <data name="logTutorial" xml:space="preserve">
-    <value>WITH SEVEN MONTHS LEFT TO LIVE, I EMBARKED ON MY LAST ADVENTURE.</value>
+    <value>WITH FORTY-SEVEN YEARS LEFT TO LIVE, I EMBARKED ON MY NEXT ADVENTURE.</value>
   </data>
   <data name="logTutorial1" xml:space="preserve">
-    <value>I'M TOLD I HAVE SEVEN MONTHS LEFT TO LIVE. SO BEGINS MY LAST ADVENTURE.</value>
+    <value>I'M TOLD GOD HIMSELF COULDN'T DESTROY THIS FLOTILLA. SO BEGINS MY NEXT ADVENTURE.</value>
   </data>
   <data name="logTutorial2" xml:space="preserve">
-    <value>WITH NOTHING TO LOSE AND SEVEN MONTHS LEFT TO LIVE, I BEGAN MY LAST ADVENTURE.</value>
+    <value>WITH NOTHING TO LOSE, I BEGAN MY NEXT ADVENTURE.</value>
   </data>
   <data name="logTutorial3" xml:space="preserve">
-    <value>ARMED WITH NOTHING BUT A BONE TO PICK AND SEVEN MONTHS LEFT TO LIVE, I EMBARKED ON MY LAST ADVENTURE.</value>
+    <value>ARMED WITH NOTHING BUT A BONE TO PICK, I EMBARKED ON MY NEXT ADVENTURE.</value>
   </data>
   <data name="logTutorial4" xml:space="preserve">
-    <value>I'M DIAGNOSED WITH SEVEN MONTHS LEFT TO LIVE. SO BEGINS MY LAST ADVENTURE.</value>
+    <value>A FORTUNE TELLER HAS TOLD ME I HAVE SEVEN MONTHS TO LIVE. SO BEGINS MY NEXT ADVENTURE.</value>
   </data>
   <data name="evTerminalDeath0" xml:space="preserve">
-    <value>AFTER SEVEN MONTHS, YOUR TERMINAL CONDITION ENTERS ITS FINAL PHASE.
+    <value>AFTER SEVEN MONTHS, YOU REFLECT ON YOUR EXPERIENCES SO FAR.
 
-YOUR ADVENTURE COMES TO AN END.</value>
+YOUR ADVENTURE WILL CONTINUE.</value>
   </data>
   <data name="evTerminalDeath0TheEnd" xml:space="preserve">
     <value>THE END</value>
   </data>
   <data name="logTerminalDeath" xml:space="preserve">
-    <value>AFTER SEVEN MONTHS, MY TERMINAL CONDITION CAUGHT UP TO ME.</value>
+    <value>AFTER SEVEN MONTHS, I DECIDE TO FINISH UP THIS ADVENTURE AND BEGIN ANOTHER.</value>
   </data>
   <data name="evCatGuns0" xml:space="preserve">
     <value>"YO. I HEARD YOU HELPED ME COUSINS ESCAPE THE LAW.

@@ -11,14 +11,14 @@ namespace SpaceShooter
 {
     public class evTerminalDeath: Event
     {
-        Rectangle img = sprite.eventSprites.bouquet;
+        Rectangle img = sprite.eventSprites.destroyers;
 
         /// <summary>
         /// Baby Yetis.
         /// </summary>
         public evTerminalDeath()
         {
-            musicCue = sounds.Music.raindrops01;
+            musicCue = sounds.Music.drumbeat;
         }
 
         public override void Activate()
