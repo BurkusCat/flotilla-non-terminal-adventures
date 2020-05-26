@@ -2354,7 +2354,7 @@ namespace SpaceShooter
         {
             int playerFleetSize = FrameworkCore.players[0].campaignShips.Count;
             
-            int minBound = (int)MathHelper.Max(playerFleetSize - 1, 2);
+            int minBound = (int)MathHelper.Max(playerFleetSize - 1, 1);
             int maxBound = (int)MathHelper.Max(playerFleetSize + 1, 2);
 
             return new Point(minBound, maxBound);            
