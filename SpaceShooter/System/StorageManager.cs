@@ -102,9 +102,9 @@ namespace SpaceShooter
     public class StorageManager
     {
         static public readonly string GAMENAME = "Flotilla";
-        static public readonly string SAVEFILE= "saveinfo.dat";
-        static public readonly string SCOREFILE = "scores.dat";
-        static public readonly string PCFILE = "settings.xml";
+        static public readonly string SAVEFILE= "saveinfo-nta.dat";
+        static public readonly string SCOREFILE = "scores-nta.dat";
+        static public readonly string PCFILE = "settings-nta.xml";
 
         /// <summary>
         /// Location of the player profile's save area.
