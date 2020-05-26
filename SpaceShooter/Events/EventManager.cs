@@ -474,11 +474,11 @@ namespace SpaceShooter
 
             if (randomInteger == 0) // 1% chance
             {
-                return options[2];
+                return options[1];
             }
             else if (randomInteger > 0 && randomInteger <= 10) // 10% chance
             {
-                return options[3];
+                return options[2];
             } 
             else // 89% chance
             {
