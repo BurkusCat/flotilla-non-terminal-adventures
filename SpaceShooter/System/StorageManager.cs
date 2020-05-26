@@ -36,6 +36,8 @@ namespace SpaceShooter
             false;
 #endif
         public bool player2UseMouse = false;
+        public bool fixedTimeStep = true;
+        public bool vsync = true;
     }
 
     [Serializable]
@@ -586,14 +588,11 @@ namespace SpaceShooter
             options.hardwaremouse = FrameworkCore.options.hardwaremouse;
             options.manualDefault = FrameworkCore.options.manualDefault;
 
-
-            
-
             options.player1UseMouse = FrameworkCore.options.p1UseMouse;
             options.player2UseMouse = FrameworkCore.options.p2UseMouse;
 
-
-
+            options.vsync = FrameworkCore.options.vsync;
+            options.fixedTimeStep = FrameworkCore.options.fixedTimeStep;
 
             return options;
         }

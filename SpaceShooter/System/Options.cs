@@ -38,5 +38,8 @@ namespace SpaceShooter
 
         public int resolutionX;
         public int resolutionY;
+
+        public bool fixedTimeStep = true;
+        public bool vsync = true;
     }
 }

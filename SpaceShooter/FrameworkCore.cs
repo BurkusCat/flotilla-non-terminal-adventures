@@ -828,6 +828,8 @@ namespace SpaceShooter
             options.p1UseMouse = optionsData.player1UseMouse;
             options.p2UseMouse = optionsData.player2UseMouse;
 
+            options.fixedTimeStep = optionsData.fixedTimeStep;
+            options.vsync = optionsData.vsync;
 
             if (options.hardwaremouse)
                 Game.IsMouseVisible = true;
@@ -862,9 +864,10 @@ namespace SpaceShooter
             graphics.PreferredBackBufferWidth = optionsData.VideoWidth;
             graphics.IsFullScreen = optionsData.isFullscreen;
 
-            
+            game.IsFixedTimeStep = optionsData.fixedTimeStep;
+            graphics.SynchronizeWithVerticalRetrace = optionsData.vsync;
+            graphics.ApplyChanges();
 
-            
 #endif
 
 

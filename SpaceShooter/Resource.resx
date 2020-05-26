@@ -2499,4 +2499,10 @@ THIS CELESTIAL WEAPON</value>
   <data name="ShipGunshipMk3" xml:space="preserve">
     <value>TORPEDO GUNSHIP MARK III</value>
   </data>
+  <data name="MenuOptionsFixedTimeStep" xml:space="preserve">
+    <value>LOCK FRAMERATE</value>
+  </data>
+  <data name="MenuOptionsVsync" xml:space="preserve">
+    <value>VSYNC</value>
+  </data>
 </root>

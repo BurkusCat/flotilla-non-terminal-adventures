@@ -3926,6 +3926,15 @@ namespace SpaceShooter {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LOCK FRAMERATE.
+        /// </summary>
+        internal static string MenuOptionsFixedTimeStep {
+            get {
+                return ResourceManager.GetString("MenuOptionsFixedTimeStep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to HARDWARE MOUSE.
         /// </summary>
         internal static string MenuOptionsHardwaremouse {
@@ -4021,6 +4030,15 @@ namespace SpaceShooter {
         internal static string MenuOptionsVibration {
             get {
                 return ResourceManager.GetString("MenuOptionsVibration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VSYNC.
+        /// </summary>
+        internal static string MenuOptionsVsync {
+            get {
+                return ResourceManager.GetString("MenuOptionsVsync", resourceCulture);
             }
         }
         

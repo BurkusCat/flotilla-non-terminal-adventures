@@ -117,6 +117,28 @@ namespace SpaceShooter
             base.AddItem(item);
 
 
+            pos.Y += GetGapSize();
+
+
+            item = new MenuItem(Resource.MenuOptionsFixedTimeStep);
+            item.position = pos;
+            item.itemType = MenuItem.menuItemType.checkbox;
+            item.Selected += OnFixedTimeStep;
+            item.optionBool = FrameworkCore.options.fixedTimeStep;
+            base.AddItem(item);
+
+
+            pos.Y += GetGapSize();
+
+
+            item = new MenuItem(Resource.MenuOptionsVsync);
+            item.position = pos;
+            item.itemType = MenuItem.menuItemType.checkbox;
+            item.Selected += OnVSync;
+            item.optionBool = FrameworkCore.options.vsync;
+            base.AddItem(item);
+
+
 
             pos.Y += GetGapSize()*2;
 
@@ -160,7 +182,30 @@ namespace SpaceShooter
             else
                 FrameworkCore.Game.IsMouseVisible = false;
         }
-        
+
+        private void OnVSync(object sender, EventArgs e)
+        {
+            FrameworkCore.options.vsync = !FrameworkCore.options.vsync;
+
+            if (sender.GetType() != typeof(MenuItem))
+                return;
+
+            ((MenuItem)sender).optionBool = FrameworkCore.options.vsync;
+
+            FrameworkCore.Graphics.SynchronizeWithVerticalRetrace = FrameworkCore.options.vsync;
+            FrameworkCore.Graphics.ApplyChanges();
+        }
+
+        private void OnFixedTimeStep(object sender, EventArgs e)
+        {
+            FrameworkCore.options.fixedTimeStep = !FrameworkCore.options.fixedTimeStep;
+            if (sender.GetType() != typeof(MenuItem))
+                return;
+            ((MenuItem)sender).optionBool = FrameworkCore.options.fixedTimeStep;
+
+            FrameworkCore.Game.IsFixedTimeStep = FrameworkCore.options.fixedTimeStep;
+        }
+
         private void OnDone(object sender, EventArgs e)
         {
             if (sender.GetType() != typeof(MenuItem))
