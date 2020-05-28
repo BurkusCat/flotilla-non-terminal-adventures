@@ -18,7 +18,7 @@ namespace SpaceShooter
         /// </summary>
         public evTerminalDeath()
         {
-            musicCue = sounds.Music.drumbeat;
+            musicCue = sounds.Music.raindrops01;
         }
 
         public override void Activate()
