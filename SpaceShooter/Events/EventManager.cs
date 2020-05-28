@@ -1,4 +1,4 @@
-﻿#region Using
+#region Using
 using System;
 using System.Collections.Generic;
 
@@ -309,7 +309,7 @@ namespace SpaceShooter
 
         private bool TerminalCheck()
         {
-            return eventPool.Count <= 0 || IsLastPlanet() || FrameworkCore.players[0].planetsVisited >= FrameworkCore.worldMap.Locations.Count;
+            return eventPool.Count <= 0 || IsLastPlanet() || FrameworkCore.players[0].planetsVisited >= FrameworkCore.worldMap.Locations.Count - 1;
         }
 
         public bool StartEvent(WorldType worldType)

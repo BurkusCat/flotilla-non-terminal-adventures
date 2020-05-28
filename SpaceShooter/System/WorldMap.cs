@@ -1,4 +1,4 @@
-﻿#region File Description
+#region File Description
 //-----------------------------------------------------------------------------
 // Microsoft XNA Community Game Platform
 // Copyright (C) Microsoft Corporation. All rights reserved.
@@ -1462,7 +1462,7 @@ namespace SpaceShooter
                 }
             }
 
-            if (candidates > 1)
+            if (candidates > 0)
                 return false;
 
             return true;
