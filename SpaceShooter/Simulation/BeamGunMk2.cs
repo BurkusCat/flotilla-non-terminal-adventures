@@ -23,7 +23,7 @@ namespace SpaceShooter
             beamMaxDamage = 70;
 
             beamDamageTime = 300;
-            beamRange = 68;
+            beamRange = 66;
 
             base.Initialize();
         }

@@ -245,7 +245,7 @@ namespace SpaceShooter
         );
 
         // Range++
-        // 64, 68, 72
+        // 64, 66, 68
         public static ShipData BeamGunship = new ShipData(Resource.ShipBeamGunship, ModelType.shipBeamGunship,
             2.5f,         /* Max Speed */
             0.12f,      /* Rotation Speed */
