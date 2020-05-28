@@ -178,6 +178,7 @@ namespace SpaceShooter
             );
 
         // Rear weapon
+        // No rear weapon, Machine gun range 6, Machine gun range 12
         public static ShipData BeamFrigate = new ShipData(Resource.ShipBeamFrigate, ModelType.shipBeamFrigate,
             3f,         /* Max Speed */
             0.15f,      /* Rotation Speed */
@@ -218,7 +219,7 @@ namespace SpaceShooter
             20f,
             DamageTypes.BeamFrigate,
             8,
-            250
+            275
         );
         public static ShipData BeamFrigateMk3 = new ShipData(Resource.ShipBeamFrigateMk3, ModelType.shipBeamFrigate,
             3f,         /* Max Speed */
@@ -240,10 +241,11 @@ namespace SpaceShooter
             20f,
             DamageTypes.BeamFrigate,
             8,
-            250
+            300
         );
 
         // Range++
+        // 64, 68, 72
         public static ShipData BeamGunship = new ShipData(Resource.ShipBeamGunship, ModelType.shipBeamGunship,
             2.5f,         /* Max Speed */
             0.12f,      /* Rotation Speed */
@@ -273,7 +275,7 @@ namespace SpaceShooter
             400,       /* Max Health */
             new TurretData[]
             {
-                new TurretTypes.BeamTurret(new Vector3(-1.8f, 0, -5),
+                new TurretTypes.BeamTurretMk2(new Vector3(-1.8f, 0, -5),
                     Vector3.Left, Vector3.Forward),
                 new TurretTypes.BeamTurretMk2(new Vector3(1.8f, 0, -5),
                     Vector3.Right, Vector3.Forward),
@@ -286,7 +288,7 @@ namespace SpaceShooter
             20,
             DamageTypes.BeamGunship,
             8,
-            350
+            375
         );
         public static ShipData BeamGunshipMk3 = new ShipData(Resource.ShipBeamGunshipMk3, ModelType.shipBeamGunship,
             2.5f,         /* Max Speed */
@@ -295,7 +297,7 @@ namespace SpaceShooter
             400,       /* Max Health */
             new TurretData[]
             {
-                new TurretTypes.BeamTurret(new Vector3(-1.8f, 0, -5),
+                new TurretTypes.BeamTurretMk3(new Vector3(-1.8f, 0, -5),
                     Vector3.Left, Vector3.Forward),
                 new TurretTypes.BeamTurretMk3(new Vector3(1.8f, 0, -5),
                     Vector3.Right, Vector3.Forward),
@@ -308,10 +310,12 @@ namespace SpaceShooter
             20,
             DamageTypes.BeamGunship,
             8,
-            350
+            400
         );
 
         // Movement++
+        // Max speed 1.5, 1.8, 1.95
+        // Rotation speed 0.07, 0.09, 0.10
         public static ShipData Battleship = new ShipData(Resource.ShipBattleship, ModelType.shipCapitalShip,
             1.5f,         /* Max Speed */
             0.07f,      /* Rotation Speed */
@@ -364,7 +368,7 @@ namespace SpaceShooter
             16,
             DamageTypes.Battleship,
             0,
-            400
+            425
             );
         public static ShipData BattleshipMk3 = new ShipData(Resource.ShipBattleshipMk3, ModelType.shipCapitalShip,
             1.95f,         /* Max Speed */
@@ -391,10 +395,11 @@ namespace SpaceShooter
             16,
             DamageTypes.Battleship,
             0,
-            400
+            450
             );
 
         // Health++
+        // 200, 300, 375
         public static ShipData Destroyer = new ShipData(Resource.ShipDestroyer, ModelType.shipDestroyer,
             4f, 0.18f, collisions.Destroyer,
             200,
@@ -429,11 +434,11 @@ namespace SpaceShooter
             0,
             DamageTypes.Destroyer,
             16,
-            200
+            225
             );
         public static ShipData DestroyerMk3 = new ShipData(Resource.ShipDestroyerMk3, ModelType.shipDestroyer,
             4f, 0.18f, collisions.Destroyer,
-            350,
+            375,
             new TurretData[]
             {
                 new TurretTypes.LongCannon(new Vector3(0.3f, -0.32f, -3.0f),
@@ -447,10 +452,11 @@ namespace SpaceShooter
             0,
             DamageTypes.Destroyer,
             16,
-            200
+            250
             );
 
-        // Fire rate++
+        // Fire rate++ / refire time
+        // 7000, 6000, 5000
         public static ShipData Gunship = new ShipData(Resource.ShipGunship, ModelType.shipGunship,
             3f, 0.12f, collisions.Gunship,
             500,
@@ -491,7 +497,7 @@ namespace SpaceShooter
             16,
             DamageTypes.Gunship,
             8,
-            250
+            275
             );
         public static ShipData GunshipMk3 = new ShipData(Resource.ShipGunshipMk3, ModelType.shipGunship,
             3f, 0.12f, collisions.Gunship,
@@ -512,7 +518,7 @@ namespace SpaceShooter
             16,
             DamageTypes.Gunship,
             8,
-            250
+            300
             );
 
         // Reduced rear + bottom hit area
@@ -556,7 +562,7 @@ namespace SpaceShooter
             1,
             DamageTypes.Dreadnought,
             8,
-            300
+            325
             );
         public static ShipData DreadnoughtMk3 = new ShipData(Resource.ShipDreadnoughtMk3, ModelType.shipDreadnought,
             2f, 0.11f, collisions.Dreadnought,
@@ -577,7 +583,7 @@ namespace SpaceShooter
             1,
             DamageTypes.Dreadnought,
             8,
-            300
+            350
             );
  
         public static ShipData Fighter = new ShipData(Resource.ShipFighter, ModelType.shipFighter,
