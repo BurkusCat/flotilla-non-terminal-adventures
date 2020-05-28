@@ -521,7 +521,10 @@ namespace SpaceShooter
             300
             );
 
-        // Reduced rear + bottom hit area
+        // Increase rear + bottom armour strength
+        // 0.01, 0.7, 0.95
+        // 0.01, 0.65, 0.9
+        // 0.01, 0.6, 0.85
         public static ShipData Dreadnought = new ShipData(Resource.ShipDreadnought, ModelType.shipDreadnought,
             2f, 0.11f, collisions.Dreadnought,
             400,
@@ -554,7 +557,7 @@ namespace SpaceShooter
                 new TurretTypes.BeamTurret(new Vector3(5.2f, -0.4f, -4.5f),
                     Vector3.Forward, Vector3.Forward),
             },
-            new float[3] { 0.01f, 0.7f, 0.95f },
+            new float[3] { 0.01f, 0.65f, 0.9f },
             ShipClass.Destroyer,
             5,
             11, 14, 5,
@@ -575,7 +578,7 @@ namespace SpaceShooter
                 new TurretTypes.BeamTurret(new Vector3(5.2f, -0.4f, -4.5f),
                     Vector3.Forward, Vector3.Forward),
             },
-            new float[3] { 0.01f, 0.7f, 0.95f },
+            new float[3] { 0.01f, 0.6f, 0.85f },
             ShipClass.Destroyer,
             5,
             11, 14, 5,
