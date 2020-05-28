@@ -21,7 +21,7 @@ namespace SpaceShooter
         /// </summary>
         public evYetiRevenge()
         {
-            shipList = new ShipData[2] { eventManager.UpgradeShip(shipTypes.Dreadnought), eventManager.UpgradeShip(shipTypes.Destroyer) };
+            shipList = new ShipData[2] { shipTypes.Dreadnought, shipTypes.Destroyer };
             shipMinMax = new Point(5, 8);
             faction = Faction.Yetis;
             musicCue = sounds.Music.invaders;
